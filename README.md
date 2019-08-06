@@ -13,7 +13,7 @@
 # install dependencies with dep
 $ dep ensure
 
-# serve with hot reload at localhost:8080
+# serve at localhost:8080
 $ go run main
 
 ```
