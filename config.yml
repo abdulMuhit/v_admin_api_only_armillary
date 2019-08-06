@@ -1,0 +1,27 @@
+config:
+  - mysqlHost: ""
+    mysqlUser: sqlusername
+    mysqlPwd: sqlpass
+    mysqlDb: mydb
+    ipAddress: ::1
+    sessionName: some_vendor
+    sessionKey: some_vendor_123
+    #port 8080 for gcloud, port 8081 for staging linode, and 8080 for linode prod
+    portHost: 8080
+    env: dev
+    jwtName: jwt_vendor
+    jwtKey: vendor_jwt
+    jwtExp: 24 #Expired in hours
+    jwtApiExp: 5 #Expired in minutes
+    jwtApiKey: token_api_only
+
+     #Target : gcloud or linode
+    TARGET: linode
+    # A = gcloud, A1 dev, A2 prod, B = linode, B1 local, B2 staging, B3 prod
+    MODE: B1
+
+    #sql option
+    #For local environment or vps
+    mysqlHostLocal: tcp(localhost:3306)
+
+
